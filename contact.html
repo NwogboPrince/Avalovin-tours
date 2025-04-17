@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+    <link rel="stylesheet" href="./contact.css"/> 
+</head>     
+<body>
+     
+    <header class="header">
+        <nav class="navbar" id="nav">
+            <a href="#" class="nav-logo" style="color: rgb(255, 255, 255); background-color: rgb(255, 0, 0);">Avalovin</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./tour.html" class="nav-link">Tour</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        
+        <section>
+            <!-------single number -->
+            <article>
+                <span class="number" data-value="400">0</span>
+                <p>Tour Locations around the World </p>
+                <div class="line line-1"></div>  
+            </article>
+            <!-------end of single number-->
+              <!-------single number -->
+              <article>
+                <span class="number" data-value="15000">0</span>
+                <p>Working Hours spent</p>
+                <div class="line line-2"></div> 
+            </article>
+            <!-------end of single number-->
+              <!-------single number -->
+              <article>
+                <span class="number" data-value="2000">0</span>
+                <p>Happy clients </p>
+                <div class="line line-3"></div> 
+            </article>
+            <!-------end of single number-->
+        </section>
+
+        
+        <section class="contact">
+            <div class="contact-info">
+                <h3>Contact us</h3>
+                <p>For any inquiries, please contact us</p>
+                <p><i class="fas fa-phone"></i> +234 9044 9029 84  </p>
+                <p><i class="fas fa-envelope"> nwogboprince32@gmail.com</i>
+                    </p>
+             <div class="contact-form">
+                <h3>Send us a message</h3>
+                <form action="contact.php" method="POST">
+                    <input type="text" name="name" class="textb" placeholder="Your Name">
+                    <input type="email" name="email" class="textb" placeholder="Your Email">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" name="submit" class="btn" value="Send">
+                </form>
+        </div>
+    </section> 
+
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background-color: #f4f4f4;  
+        }  
+        .container {  
+            width: 80%;  
+            margin: auto;  
+            overflow: hidden;  
+            padding: 20px;  
+            background: white;  
+            border-radius: 8px;  
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+        }  
+        h1 {  
+            text-align: center;  
+            color: #000000;  
+    font-size: 30px;  
+    margin-bottom: 1rem;  
+        }  
+        p{
+            color: #000000;  
+    font-size: 20px;  
+    margin: 0.5rem 0; 
+        }
+        .contact-options {  
+            margin: 20px 0;  
+            text-align: center;  
+        }  
+        .buttons {  
+            display: flex;  
+            justify-content: center;  
+            gap: 20px;  
+        }  
+        .button {  
+            padding: 10px 20px;  
+            font-size: 16px;  
+            color: white;  
+            background-color: #ea00ff;  
+            border: none;  
+            border-radius: 5px;  
+            text-decoration: none;  
+        }  
+        .button:hover {  
+            background-color: #0056b3;  
+        }  
+        form {  
+            display: flex;  
+            flex-direction: column;  
+            margin: 20px 0;  
+            
+        }  
+        label {  
+            margin-bottom: 5px; 
+             font-size: 16px;
+             color: black;
+        }  
+        input, textarea {  
+            padding: 10px;  
+            margin-bottom: 10px;  
+            border: 1px solid #000000;  
+            border-radius: 5px;  
+        }  
+        input[type="submit"] {  
+            background-color: #28a745;  
+            color: white;  
+            border: none;  
+            cursor: pointer;  
+        }  
+        input[type="submit"]:hover {  
+            background-color: #218838;  
+        }  
+    </style>  
+</head>  
+<body>  
+
+    <div class="container">  
+        <h1>Contact Us</h1>  
+
+        <div class="contact-options">  
+            <p>If you need assistance, please reach out to our customer care line:</p>  
+            <div class="buttons">  
+                <a href="tel:+2349044902984" class="button">Call Customer Care</a>  
+                <a href="mailto:nwogboprince32@gmail.com" class="button">Email Support</a>  
+            </div>  
+            <p>Or report a problem using the form below:</p>  
+        </div>  
+
+        <form action="submit_form.php" method="post">  
+            <label for="name">Your Name:</label>   
+            <input type="text" id="name" name="name" required>  
+
+            <label for="email">Your Email:</label>  
+            <input type="email" id="email" name="email" required>  
+
+            <label for="message">Description of the Problem:</label>  
+            <textarea id="message" name="message" rows="5" required></textarea>  
+
+            <input type="submit" value="Submit">  
+        </form>  
+    </div> 
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Avalovin</h3>
+            <p style="color: white;">Our main goal is to make your travel experience as simple and easy as possible</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            &copy; Avalovin | Designed by Prince Nwogbo
+        </div> 
+
+   
+    <script src="contact.js"></script> 
+    </footer>
+    </body>
+    </html>
+

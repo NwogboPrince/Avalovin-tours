@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    line-height: 1.6;  
+    background-color: #f7f7f7;  
+}  
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* css to reset all the designs */
+
+/* add styles on elements */
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #098929;
+    position: relative;  
+    overflow: hidden;  
+    padding: 20px 0;  
+    font-size: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* background-color: #101010; */
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    /* font-size: 1.6rem; */
+    font-size: 2rem;
+    font-weight: 400;
+    /* color: #475569; */
+    color: #fff;
+    /* change */
+}
+
+.nav-link:hover {
+    color: #ff0000;
+}
+
+.nav-logo {
+    /* font-size: 2.1rem; */
+    font-size: 3rem;
+    font-weight: 500;
+    /* color: #482ff7; */
+    color: #fff;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: black;
+}
+.fixed-nav .links a {
+    color: #891609;
+}
+.fixed-nav .links a:hover {
+    color: #0056b3;
+
+}
+
+.links {
+    font-size: 25px;
+}
+
+.nav-center {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    max-width: 1200px;  
+    margin: auto;  
+    padding: 0 20px;  
+}  
+
+.logo {  
+    width: 80px;  
+    height: 80px;  
+}  
+
+.nav-toggle {  
+    background: transparent; 
+    border: none;  
+    color: white;  
+    font-size: 24px;  
+    cursor: pointer;  
+    display: none;  
+    padding: 15px;  
+    border-radius: 50%; /* Circular background */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    transition: background-color 0.3s, transform 0.3s;  
+}  
+
+.nav-toggle:hover {  
+    background-color: #0056b3; /* Darker shade on hover */  
+    transform: scale(1.1); /* Slightly enlarge on hover */  
+}  
+
+.nav-toggle i {  
+    color: white; /* Icon color */  
+    font-size: 24px; /* Icon size */  
+} 
+
+.links-container {  
+    flex-grow: 1;  
+    text-align: center;  
+    height: auto;
+}  
+
+.links {  
+    list-style: none;  
+    display: flex;  
+    justify-content: center;  
+}  
+
+.links a {  
+    color: white;  
+    text-decoration: none;  
+    padding: 15px 20px;  
+    transition: color 0.3s ease;  
+}  
+
+.links a:hover {  
+    color: rgb(221, 5, 217);  
+}  
+
+.banner {  
+    text-align: center;  
+    padding: 100px 20px;  
+    background: url('./image/swimming-pool.jpg') no-repeat center center/cover; /* change the image */  
+} 
+
+.banner h1 {  
+    font-size: 2.5em;  
+    color: white;
+}  
+
+.banner p {  
+    margin: 20px auto;  
+    max-width: 500px; 
+    color: white; 
+    font-size: 15px;
+}  
+
+.btn {  
+    display: inline-block;  
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 10px;  
+    text-decoration: none;  
+}  
+
+.btn-white {  
+    background: rgb(4, 34, 134);  
+    color: #ffffff;  
+    transition: background 0.3s ease;  
+}  
+
+.btn-white:hover {  
+    background: #ff0a0a;  
+}  
+
+/* Section Styles */  
+.section {  
+    padding: 60px 20px;  
+    text-align: center;  
+}  
+
+.title h2 {  
+    font-size: 3em;  
+    margin-bottom: 20px;  
+}  
+
+.title span {  
+    color: #0d5d22;  
+}  
+
+/* Footer Styles */  
+footer {  
+    background:#0d5d22 ;  
+    color: white;  
+    text-align: center;  
+    padding: 20px 0; 
+    font-size: 14px;
+}  
+
+#date {  
+    font-weight: bold;  
+}  
+
+.scroll-link{
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        /* background-color: #fff; */
+        background-color: #098929;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+
+/* Responsive Styles */  
+@media (max-width: 768px) {  
+    .nav-toggle {  
+        display: block;  
+    }  
+
+    .links {  
+        flex-direction: column;  
+        display: none; /* Hide links by default on mobile */  
+    }  
+
+    .links.active {  
+        display: flex; /* Show links when active */  
+    }  
+
+    .banner h1 {  
+        font-size: 2em;  
+    }  
+
+    .banner p {  
+        font-size: 0.9em;  
+    }  
+}
+
+
+
+
+
+/* add styles on elements */

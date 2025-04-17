@@ -1,0 +1,439 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    line-height: 1.6;  
+    background-color: #f7f7f7;  
+}  
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* css to reset all the designs */
+
+/* add styles on elements */
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #098929;
+    position: relative;  
+    overflow: hidden;  
+    padding: 20px 0;  
+    font-size: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* background-color: #101010; */
+    background-color: #fff;
+}
+
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    /* font-size: 1.6rem; */
+    font-size: 2rem;
+    font-weight: 400;
+    /* color: #475569; */
+    color: #fff;
+    /* change */
+}
+
+.nav-link:hover {
+    color: #ff0000;
+}
+
+.nav-logo {
+    /* font-size: 2.1rem; */
+    font-size: 3rem;
+    font-weight: 500;
+    /* color: #482ff7; */
+    color: #fff;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: black;
+}
+.fixed-nav .links a {
+    color: #891609;
+}
+.fixed-nav .links a:hover {
+    color: #0056b3;
+
+}
+
+.links {
+    font-size: 25px;
+}
+
+.nav-center {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    max-width: 1200px;  
+    margin: auto;  
+    padding: 0 20px;  
+}  
+
+.logo {  
+    width: 80px;  
+    height: 80px;  
+}  
+
+.nav-toggle {  
+    background: transparent; 
+    border: none;  
+    color: white;  
+    font-size: 24px;  
+    cursor: pointer;  
+    display: none;  
+    padding: 15px;  
+    border-radius: 50%; /* Circular background */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    transition: background-color 0.3s, transform 0.3s;  
+}  
+
+.nav-toggle:hover {  
+    background-color: #0056b3; /* Darker shade on hover */  
+    transform: scale(1.1); /* Slightly enlarge on hover */  
+}  
+
+.nav-toggle i {  
+    color: white; /* Icon color */  
+    font-size: 24px; /* Icon size */  
+} 
+
+.links-container {  
+    flex-grow: 1;  
+    text-align: center;  
+    height: auto;
+}  
+
+.links {  
+    list-style: none;  
+    display: flex;  
+    justify-content: center;  
+}  
+
+.links a {  
+    color: white;  
+    text-decoration: none;  
+    padding: 15px 20px;  
+    transition: color 0.3s ease;  
+}  
+
+.links a:hover {  
+    color: rgb(221, 5, 217);  
+}  
+
+
+/* add styles on elements */
+section {  
+    display: flex;  
+    justify-content: space-around; /* Distribute space evenly between items */  
+    padding: 50px 20px; /* Add padding for spacing */  
+    background-color: #f9f9f9; /* Set a light background color */  
+} 
+
+.stats {  
+    display: flex;  
+    justify-content: space-between;  
+}  
+
+article {  
+    background: white;  
+    border-radius: 10px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+    padding: 20px;  
+    text-align: center;  
+    width: 30%; /* Adjust width as necessary */ 
+    transform: scale(1.05);   
+}  
+
+article p {  
+    font-size: 16px; /* Set a smaller font size for description */  
+    color: #000000; /* Darker gray for text */  
+}  
+
+.number {  
+    font-size: 48px;  
+    font-weight: bold;  
+    display: block;  
+    margin-bottom: 10px;  
+    transition: color 0.3s;
+}  
+
+/* Hover effect for numbers */  
+.number:hover {  
+    color: #ea0000; /* Darken the color on hover */  
+} 
+
+/* For the colored lines */  
+.line {  
+    height: 4px;  
+    margin-top: 10px;  
+    border-radius: 2px;  
+}  
+
+.line-1 {  
+    background-color: #4CAF50; /* Green for Tour Locations */  
+}  
+
+.line-2 {  
+    background-color: #2196F3; /* Blue for Working Hours */  
+}  
+
+.line-3 {  
+    background-color: #FF9800; /* Orange for Happy Clients */  
+}  
+
+/* Responsive design */  
+.contact {  
+    background-color: #ffffff;  
+    padding: 2rem;  
+    border-radius: 8px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+    max-width: 600px;  
+    margin: 2rem auto;  
+}  
+
+.contact-info h3 {  
+    color: #000000;  
+    font-size: 30px;  
+    margin-bottom: 1rem;  
+}  
+
+.contact-info p {  
+    color: #000000;  
+    font-size: 20px;  
+    margin: 0.5rem 0;  
+}  
+
+.contact-info i {  
+    color: #007BFF;  
+    margin-right: 0.5rem;  
+}  
+
+
+.contact-form {  
+    background: white;  
+    padding: 20px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+    width: 300px;  
+}  
+
+.contact-form h3 {  
+    margin-bottom: 20px;  
+    color: #000000;  
+    text-align: center;  
+}  
+
+.textb {  
+    width: 100%;  
+    padding: 10px;  
+    margin: 10px 0;  
+    border: 1px solid #000000;  
+    border-radius: 4px;  
+    font-size: 20px;  
+}  
+
+textarea {  
+    width: 100%;  
+    padding: 20px;  
+    margin: 10px 0;  
+    border: 1px solid #000000;  
+    border-radius: 4px;  
+    resize: vertical;  
+    font-size: 20px;  
+}  
+
+.btn {  
+    background-color: #1eab23;  
+    color: white;  
+    padding: 10px;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    width: 100%;  
+    font-size: 20px;  
+}  
+
+.btn:hover {  
+    background-color: #317031;  
+} 
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #ff0000;
+}
+
+ /* Footer Styles */  
+footer {  
+    background-color: rgb(15, 116, 38);
+    color: white;  
+    text-align: center;  
+    padding: 20px 0; 
+    font-size: 14px;
+}  
+
+#date {  
+    font-weight: bold;  
+}  
+
+.scroll-link{
+    font-size: 13px;
+}
+
+
+
+@media (max-width: 768px) {  
+    .stats {  
+        flex-direction: column;  
+        align-items: center;  
+    }  
+
+    article {  
+        width: 80%; /* Full width on smaller screens */  
+        margin-bottom: 20px;  
+    }  
+}  
+
+
+/* Additional styling for responsiveness */  
+@media (max-width: 768px) {  
+    section {  
+        flex-direction: column; /* Stack the articles vertically on smaller screens */  
+        align-items: center; /* Center the items */  
+    }  
+    
+    article {  
+        margin-bottom: 20px; /* Add spacing between stacked articles */  
+    }  
+} 
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        /* background-color: #fff; */
+        background-color: #098929;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+            z-index: 1000; /* Ensure it is above other content */    
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+

@@ -1,0 +1,77 @@
+##  TRAVEL & TOUR WEBSITE
+
+Welcome to our Travel & Tour website! This platform is designed to help you explore the world, plan your vacations, and discover exciting travel packages. Our website features a variety of pages, including articles, an about section, services, a gallery, and a contact page, all built using HTML, CSS, and JavaScript.
+
+* Table of Contents
+* Features
+* Installation
+* Usage
+* Pages Overview
+* Contributing
+* License
+* Features
+
+# Dark Mode Toggle: Easily switch between light and dark themes for a comfortable browsing experience.
+
+## Article Page: Read insightful travel articles with the option to toggle dark mode.
+
+## About Page: Learn about our history and mission.
+
+## Services Page:
+
+- Countdown timer for discounts on travel packages.
+- A form to purchase tickets.
+- A to-do list for your travel preparations.
+- Gallery: View beautiful images from various travel destinations.
+
+## Contact Page:
+
+- Send us messages or report problems through a contact form.
+- Customer care support via phone and email.
+
+## Installation
+To get started with our Travel & Tour website, follow these steps:
+
+## Clone the repository:
+bash
+- git clone https://github.com/yourusername/travel-tour-website.git  
+- Navigate to the project directory:
+bash
+- cd travel-tour-website  
+- Open the index.html file in your preferred web browser.
+
+## Usage
+- Dark Mode Toggle: Click the toggle button in the header to switch between light and dark modes.
+- To-Do List: Add items to your travel checklist to ensure you don't forget anything important.
+- Ticket Purchase: Fill out the ticket purchase form on the services page to book your travel packages.
+- Contact Us: Use the contact form to send inquiries or report issues.
+Pages Overview
+1. Home Page
+Introduction to our services and featured destinations.
+2. Article Page
+Contains informative articles about travel tips and destination highlights.
+Dark mode toggle implemented.
+3. About Page
+Details our history, mission, and values.
+4. Services Page
+Countdown timer for limited-time discounts.
+Ticket purchase form.
+To-do list for travel preparations.
+5. Gallery
+A collection of stunning images from various travel destinations.
+6. Contact Page
+## Contact form for inquiries or reporting issues.
+- Customer care line: +2349044902984
+- Email: princegolden829@gmail.com
+
+## Contributing
+We welcome contributions! If you have suggestions or improvements, please fork the repository and create a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+Thank you for visiting our Travel & Tour website! We hope you find it helpful for planning your next adventure! Safe travels!
+
+
+
+### Avalovin | Designed by Prince Nwogbo 
