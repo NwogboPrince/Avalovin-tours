@@ -47,7 +47,7 @@ To explore Avalovin locally:
 
 Clone the repository:
 bash
-git clone https://github.com/NwogboPrince/avalovin.git  
+git clone https://github.com/NwogboPrince/avalovin.git  / https://avalovinz.netlify.app/
 Navigate to the project directory:
 bash
 cd avalovin  
